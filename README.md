@@ -284,5 +284,3 @@ Our Support Team:
 
 Contributions are highly encouraged! Please fork and submit a PR.
 
-
-
