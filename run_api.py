@@ -34,13 +34,14 @@ async def chat_with_sales_agent(req: MessageList):
 
 
 def _set_env():
-    with open(".env", "r") as f:
-        env_file = f.readlines()
-    envs_dict = {
-        key.strip("'"): value.strip("\n")
-        for key, value in [(i.split("=")) for i in env_file]
-    }
-    os.environ["OPENAI_API_KEY"] = envs_dict["OPENAI_API_KEY"]
+    # with open(".env", "r") as f:
+    #     env_file = f.readlines()
+    # envs_dict = {
+    #     key.strip("'"): value.strip("\n")
+    #     for key, value in [(i.split("=")) for i in env_file]
+    # }
+    # os.environ["OPENAI_API_KEY"] = envs_dict["OPENAI_API_KEY"]
+    os.environ["OPENAI_API_KEY"]
 
 
 if __name__ == "__main__":
